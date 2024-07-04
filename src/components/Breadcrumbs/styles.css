@@ -1,0 +1,19 @@
+.breadcrumbs-container {
+  margin-bottom: 48px;
+  display: block;
+}
+
+.breadcrumbs-container ol,
+.breadcrumbs-container ol li {
+  padding: 0px;
+  display: flex;
+}
+
+.breadcrumbs-container ol li.active-link a {
+  font-weight: 500;
+  color: var(--green-500);
+}
+
+.breadcrumbs-container ol li svg {
+  margin: 0px 8px;
+}

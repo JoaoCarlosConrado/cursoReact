@@ -1,0 +1,33 @@
+.app-layout {
+  width: 100%;
+  max-width: 1440px;
+  height: 100vh;
+  margin: 0px auto;
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-layout .app-layout-container {
+  height: 100%;
+  display: flex;
+}
+
+.app-layout .app-layout-container .app-layout-content {
+  margin-left: 24px;
+  margin-bottom: 48px;
+  width: 100%;
+}
+
+.app-layout .app-layout-container .app-layout-content header {
+  height: 96px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.app-layout .app-layout-container .app-layout-content section {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}

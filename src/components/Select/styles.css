@@ -1,0 +1,45 @@
+.select-container {
+  position: relative;
+  width: 100%;
+  height: 40px;
+
+  background-color: var(--black-100);
+  border: 1px solid var(--gray-900);
+  border-radius: 8px;
+
+  display: flex;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+.select-container:focus-within {
+  border: transparent;
+  outline: 2px solid var(--green-600);
+}
+
+.select-container select {
+  appearance: none;
+  flex: 1;
+  height: 100%;
+  padding: 0 16px;
+  border: 0;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: var(--black-100);
+  color: var(--white-100);
+}
+
+.select-container select:focus {
+  outline: none;
+}
+
+.select-container select::placeholder {
+  color: var(--gray-700);
+}
+
+.select-container > svg {
+  position: absolute;
+  right: 16px;
+  color: var(--gray-700);
+}

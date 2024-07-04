@@ -1,0 +1,65 @@
+.header-container {
+  position: relative;
+}
+
+.header-container .header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.header-container .header-content  .header-infor {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.header-container .header-content .header-infor span {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+}
+
+.header-container .header-content .header-infor span:last-child {
+  line-height: 20px;
+  color: var(--gray-500);
+  font-weight: 400;
+}
+
+.header-container .header-content img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+.header-container .header-content .profile-preview {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+  background-color: var(--zinc-500);
+  text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-container .button-logout {
+  border: 1px solid var(--gray-900);
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.header-container .button-logout:hover {
+  background-color: var(--gray-900);
+}
+
+.header-container .button-logout svg {
+  color: var(--gray-500);
+}

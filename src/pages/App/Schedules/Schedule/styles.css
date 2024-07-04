@@ -1,0 +1,100 @@
+.schedules-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.schedules-container li {
+  flex-basis: 280px;
+  position: relative;
+  padding: 16px;
+  border: 1px solid var(--gray-900);
+  border-radius: 8px;
+}
+
+.schedules-container li:hover {
+  background-color: var(--zinc-900);
+}
+
+.schedules-container li .schedules-item-head {
+  margin-bottom: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.schedules-container li .schedules-item-head a,
+.schedules-container li .schedules-item-head .identifier {
+  position: relative;
+  font-size: 14px;
+  line-height: 20px;
+  text-decoration: underline;
+  display: block;
+}
+
+.schedules-container li .schedules-item-head a::after {
+  content: '';
+  height: 8px;
+  width: 8px;
+  position: absolute;
+  top: 4px;
+  right: -16px;
+  border-radius: 50%;
+}
+
+.schedules-container li .schedules-item-head a.schedule-inactive::after[aria-disabled="true"] {
+  pointer-events: none;
+  background-color: hsl(21, 90%, 48%);
+}
+
+.schedules-container li .schedules-item-head a.schedule-active::after {
+  background-color: var(--green-600);
+}
+
+.schedules-container li .schedules-item-head > div {
+  display: flex;
+  gap: 4px;
+}
+
+
+.schedules-container li .schedules-item-head > div button {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  background-color: transparent;
+  color: var(--gray-500);
+}
+
+.schedules-container li .schedules-item-body {
+  height: 96px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.schedules-container li .schedules-item-body span {
+  font-size: 14px;
+  line-height: 20px;
+
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.schedules-container li .schedules-item-body span > span {
+  color: var(--gray-500);
+  display: inline-flex;
+}
+
+.schedules-container li .schedules-item-date {
+  width: 100%;
+  margin-top: auto;
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-500);
+
+  display: block;
+}

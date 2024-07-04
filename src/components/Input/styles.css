@@ -1,0 +1,17 @@
+.input-container {
+  height: 38px;
+  width: 324px;
+  padding: 0 14px;
+
+  border: 1px solid var(--gray-900);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--white-100);
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.input-container:focus {
+  outline: 2px solid var(--green-600);
+}

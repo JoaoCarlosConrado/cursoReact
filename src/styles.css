@@ -1,0 +1,49 @@
+* {
+  --black-100: hsl(240, 10%, 4%);
+  --black-200: hsl(240, 14%, 5%);
+  --white: hsl(0, 0%, 100%);
+  --white-100: hsl(0, 0%, 95%);
+  --green-500: hsl(145, 46%, 45%);
+  --green-600: hsl(145, 48%, 35%);
+  --green-700: hsl(146, 50%, 24%);
+  --gray-100: hsl(240, 6%, 90%);
+  --gray-500: hsl(240, 5%, 65%);
+  --gray-700: hsl(0, 0%, 46%);
+  --gray-900: hsl(240, 4%, 16%);
+
+  --zinc-500: hsl(240, 4%, 46%);
+  --zinc-900: hsl(240, 6%, 10%);
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black-100);
+  color: var(--white-100);
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  border: 0;
+}
+
+button, input, textarea, select {
+  font-family: 'Inter', sans-serif;
+}
+
+a {
+  color: var(--white-100);
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+li {
+  padding: 16px;
+}

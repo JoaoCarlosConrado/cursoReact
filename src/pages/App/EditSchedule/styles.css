@@ -1,0 +1,32 @@
+.edit-schedule-container {
+  margin-top: 24px;
+  margin-bottom: 48px;
+}
+
+.edit-schedule-container .form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edit-schedule-container .form-container input {
+  width: 100%;
+}
+
+.edit-schedule-container .form-container label {
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--gray-100);
+  display: inline-block;
+}
+
+.edit-schedule-container .form-container .field-group {
+  display: flex;
+  gap: 16px;
+}
+
+.edit-schedule-container .form-container .button-group {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}

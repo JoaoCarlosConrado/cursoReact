@@ -1,0 +1,48 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+  
+    display: flex;
+    align-items: center; /** Eixo vertical **/
+    justify-content: center; /** Eixo horizontal **/
+  }
+  
+  .container .content {
+    width: 100%;
+    max-width: 1024px;
+    padding: 48px 40px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .container .content h1 {
+    font-size: 92px;
+    font-weight: 900;
+    line-height: 88px;
+  }
+  
+  .container .content h1 span {
+    color: var(--green-500);
+  }
+  
+  .container .content form {
+    width: 100%;
+    max-width: 400px;
+    padding: 48px 40px;
+  
+    border: 1px solid var(--gray-900);
+    border-radius: 8px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 16px;
+  }
+
+  .container .content form button {
+    width: 100%; 
+    text-transform: uppercase;
+  }
+  
